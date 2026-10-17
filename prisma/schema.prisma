@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id                  String   @id @default(cuid())
+  name                String
+  slug                String   @unique
+  category            String
+  keyFeatures         String   @db.Text
+  tone                String   @default("professional")
+  seoTitle            String   @map("seo_title")
+  metaDescription     String   @map("meta_description") @db.VarChar(160)
+  detailedDescription String   @map("detailed_description") @db.Text
+  targetKeywords      String[] @default([]) @map("target_keywords")
+  createdAt           DateTime @default(now()) @map("created_at")
+  updatedAt           DateTime @updatedAt @map("updated_at")
+
+  @@index([category])
+  @@map("products")
+}
