@@ -305,7 +305,7 @@ export default function ProductSeoGeneratorForm({
             name="productName"
             type="text"
             required
-            placeholder="e.g., AeroFit Merino Wool Running Jacket"
+            placeholder="e.g., Autonomous Customer Support Agent"
             value={form.productName}
             onChange={handleInputChange}
             className="mt-1.5 w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 focus:outline-none"
@@ -325,7 +325,7 @@ export default function ProductSeoGeneratorForm({
               name="category"
               type="text"
               required
-              placeholder="e.g., Men's Activewear"
+              placeholder="e.g., Workflow Automation / AI Software"
               value={form.category}
               onChange={handleInputChange}
               className="mt-1.5 w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 focus:outline-none"
@@ -366,13 +366,13 @@ export default function ProductSeoGeneratorForm({
             name="keyFeatures"
             rows={3}
             required
-            placeholder="e.g., 100% Australian superfine merino wool, breathable mesh underarm panels, water-repellent DWR coating, reflective night-run trim, zippered chest pocket"
+            placeholder="e.g., Handles incoming tickets 24/7, integrates with CRM databases, auto-resolves refund queries, and escalates edge cases."
             value={form.keyFeatures}
             onChange={handleInputChange}
             className="mt-1.5 w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 focus:outline-none"
           />
           <p className="mt-1 text-xs text-slate-500">
-            Separate key specs, materials, or unique selling points with commas.
+            Separate key specs, capabilities, or integrations with commas.
           </p>
         </div>
       </div>
